@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+<!-http://www.mugglenet.com/2017/08/patronus-say-personality/->
+<head>
+<style>
+#livehead{
+color:gray;
+font-size:50px;
+font-family:UnifrakturMaguntia,cursive;
+padding:20px;
+}
+#ocean{
+font-family:UnifrakturMaguntia,cursive;
+border-color:black;
+font-size:20px;
+padding: 5px 10px;
+}
+#forest{
+font-family:UnifrakturMaguntia,cursive;
+border-color:black;
+font-size:20px;
+padding:5px 10px;
+margin:20px;
+}
+#clouds{
+font-family:UnifrakturMaguntia,cursive;
+border-color:black;
+font-size:20px;
+padding: 5px 10px;
+}
+#fly{
+font-family:UnifrakturMaguntia,cursive;
+border-color:black;
+font-size:20px;
+padding: 5px 10px;
+}
+#wisdom{
+font-family:UnifrakturMaguntia,cursive;
+border-color:black;
+font-size:20px;
+padding:5px 10px;
+margin:20px;
+}
+#bravery{
+font-family:UnifrakturMaguntia,cursive;
+border-color:black;
+font-size:20px;
+padding: 5px 10px;
+}
+
+#taskbar1:hover{
+background-color:#CCCCFF;
+}
+
+#taskbar2:hover{
+background-color:#CCCCFF;
+}
+
+#taskbar3:hover{
+background-color:#CCCCFF;
+}
+
+taskbar.active{
+background-color:white;
+}
+
+#navbar {
+display: flex;
+justify-content: space-between;
+}
+
+#navbar div {
+background-color: purple;
+padding:10px;
+font-family: 'UnifrakturMaguntia', cursive;
+}
+
+#navbar div a {
+color:gray;
+}
+
+</style>
+<link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia" rel="stylesheet"> 
+</head>
+<body background="https://fsa.zobj.net/crop.php?r=r3TvnmcF7V2X9rhDrH03-am6O8iC8xdipLCld_UFSvg334CEz54nR0zvruMf5j3ls6Wdqkybd6e7ClnMymJSDVKX6-XUHTB-vnAUZK-RUJVULqhXzop246Fn_hJAWsFAq1oNeI8ULL0jxbt3">
+
+<div id="navbar">
+<div id="taskbar1"><a href="final project kinet-X.html">Home</a></div>
+<div id="taskbar2"><a href="Patronus quiz.html">Take the quiz</a></div>
+<div id="taskbar3"><a href="Meet.html">Meet your patronus</a></div>
+</div>
+
+<h1 id="livehead">If you could live anywhere, where would you choose?</h1>
+<button id="ocean">In the ocean</button>
+<button id="forest">In the forest</button>
+<button id="clouds">On top of the clouds</button>
+</body>
+<script>
+
+
+var clouds = document.getElementById("clouds");
+clouds.addEventListener("click", function(e){
+var cloudsquiz=document.createElement("center");
+cloudsquiz.id="cloudsquiz";
+cloudsquiz.innerText = "What characteristic would you choose?";
+cloudsquiz.style.fontFamily="UnifrakturMaguntia, cursive";
+cloudsquiz.style.color="gray";
+cloudsquiz.style.fontSize="50px";
+cloudsquiz.textDecoration="bold";
+cloudsquiz.style.margin="50px";
+document.body.appendChild(cloudsquiz);
+
+var fly= document.createElement("button");
+fly.id="fly";
+fly.innerText = "The ability to fly";
+document.body.appendChild(fly);
+
+var wisdom= document.createElement("button");
+wisdom.id="wisdom";
+wisdom.innerText = "Being wise";
+document.body.appendChild(wisdom);
+
+var bravery= document.createElement("button");
+bravery.id="bravery";
+bravery.innerText="The trait of being brave";
+document.body.appendChild(bravery);
+
+fly.addEventListener("click",function(e) {
+	var dragon=document.createElement("center");
+	var dragonImg = document.createElement("img");
+	dragonImg.setAttribute(
+		"src", 
+		"https://vignette.wikia.nocookie.net/harrypotter/images/1/10/Dragon_Patronus.png/revision/latest?cb=20170105051612"
+	);	
+	dragon.innerText="Your patronus is...a dragon!";
+	dragon.style.fontFamily="UnifrakturMaguntia, cursive";
+	dragon.style.fontSize="50px";
+	dragon.style.color="gray";
+	dragonImg.style.width="500px";
+	dragonImg.style.height="400px";
+	dragon.appendChild(dragonImg);
+	document.body.appendChild(dragon);
+});
+
+wisdom.addEventListener("click",function(e) {
+	var owl = document.createElement("center");
+	var owlImg = document.createElement("img");
+	owlImg.setAttribute(
+		"src", 
+		"https://i.pinimg.com/originals/fe/bd/8b/febd8b829fb735c9d987d4ef2098d51d.jpg"
+	);	
+	owl.innerText="Your patronus is...an owl!";
+	owl.style.fontFamily="UnifrakturMaguntia, cursive";
+	owl.style.fontSize="50px";
+	owl.style.color="gray";
+	owlImg.style.width="500px";
+	owlImg.style.height="400px";
+	owl.appendChild(owlImg);
+	document.body.appendChild(owl);
+});
+
+bravery.addEventListener("click",function(e) {
+	var pheonix = document.createElement("center");
+	var pheonixImg=document.createElement("img");
+	pheonixImg.setAttribute(
+		"src",
+		"https://vignette.wikia.nocookie.net/harrypotter/images/5/5a/Dumbledores_phoenix_patronus.jpg/revision/latest?cb=20170108235142"
+);
+	pheonix.innerText="Your patronus is...a pheonix!";
+	pheonix.style.fontFamily="UnifrakturMaguntia, cursive";
+	pheonix.style.fontSize="50px";
+	pheonix.style.color="gray";
+	pheonixImg.style.width="500px";
+	pheonixImg.style.height="400px";
+	pheonix.appendChild(pheonixImg);
+	document.body.appendChild(pheonix);
+});
+
+});
+
+
+
+var forest = document.getElementById("forest");
+forest.addEventListener("click", function(e){
+var forestquiz=document.createElement("center");
+forestquiz.id="woodsquiz";
+forestquiz.innerText = "What characteristic would you choose?";
+forestquiz.style.fontFamily="UnifrakturMaguntia, cursive";
+forestquiz.style.color="gray";
+forestquiz.style.fontSize="50px";
+forestquiz.textDecoration="bold";
+forestquiz.style. margin="50px";
+document.body.appendChild(forestquiz);
+
+var fly= document.createElement("button");
+fly.id="fly";
+fly.innerText = "The ability to fly";
+document.body.appendChild(fly);
+
+var wisdom= document.createElement("button");
+wisdom.id="wisdom";
+wisdom.innerText = "Being wise";
+document.body.appendChild(wisdom);
+
+var bravery= document.createElement("button");
+bravery.id="bravery";
+bravery.innerText="The trait of being brave";
+document.body.appendChild(bravery);
+
+fly.addEventListener("click",function(e) {
+	var hawk=document.createElement("center");
+	var hawkImg = document.createElement("img");
+	hawkImg.setAttribute(
+		"src", 
+		"https://i1.wp.com/www.theplotbunny.com/wp-content/uploads/2016/12/hawk.jpg"
+	);	
+	hawk.innerText="Your patronus is...a hawk!";
+	hawk.style.fontFamily="UnifrakturMaguntia, cursive";
+	hawk.style.fontSize="50px";
+	hawk.style.color="gray";
+	hawkImg.style.width="500px";
+	hawkImg.style.height="400px";
+	hawk.appendChild(hawkImg);
+	document.body.appendChild(hawk);
+});
+
+bravery.addEventListener("click",function(e) {
+	var stag = document.createElement("center");
+	var stagImg = document.createElement("img");
+	stagImg.setAttribute(
+		"src", 
+		"https://vignette.wikia.nocookie.net/harrypotter/images/f/fe/Patronus_PM_SilverStagPatronus_MomentIllust.jpg/revision/latest?cb=20170314002945"
+	);	
+	stag.innerText="Your patronus is...a stag!";
+	stag.style.fontFamily="UnifrakturMaguntia, cursive";
+	stag.style.fontSize="50px";
+	stag.style.color="gray";
+	stagImg.style.width="500px";
+	stagImg.style.height="400px";
+	stag.appendChild(stagImg);
+	document.body.appendChild(stag);
+});
+
+wisdom.addEventListener("click",function(e) {
+	var fox = document.createElement("center");
+	var foxImg=document.createElement("img");
+	foxImg.setAttribute(
+		"src",
+		"http://www.theplotbunny.com/wp-content/uploads/2016/12/fox.jpg"
+);
+	fox.innerText="Your patronus is...a fox!";
+	fox.style.fontFamily="UnifrakturMaguntia, cursive";
+	fox.style.fontSize="50px";
+	fox.style.color="gray";
+	foxImg.style.width="500px";
+	foxImg.style.height="400px";
+	fox.appendChild(foxImg);
+	document.body.appendChild(fox);
+});
+
+});
+
+
+
+var ocean = document.getElementById("ocean");
+ocean.addEventListener("click", function(e){
+var oceanquiz=document.createElement("center");
+oceanquiz.id="oceanquiz";
+oceanquiz.innerText = "What characteristic would you choose?";
+oceanquiz.style.fontFamily="UnifrakturMaguntia, cursive";
+oceanquiz.style.color="gray";
+oceanquiz.style.fontSize="50px";
+oceanquiz.textDecoration="bold";
+oceanquiz.style. margin="50px";
+document.body.appendChild(oceanquiz);
+
+var fly= document.createElement("button");
+fly.id="fly";
+fly.innerText = "The ability to fly";
+document.body.appendChild(fly);
+
+var wisdom= document.createElement("button");
+wisdom.id="wisdom";
+wisdom.innerText = "Being wise";
+document.body.appendChild(wisdom);
+
+var bravery= document.createElement("button");
+bravery.id="bravery";
+bravery.innerText="The trait of being brave";
+document.body.appendChild(bravery);
+
+fly.addEventListener("click",function(e) {
+	var seagull=document.createElement("center");
+	var seagullImg = document.createElement("img");
+	seagullImg.setAttribute(
+		"src", 
+		"https://78.media.tumblr.com/tumblr_lww6tdN5F61qzjpgko1_500.png"
+	);	
+	seagull.innerText="Your patronus is...a seagull!";
+	seagull.style.fontFamily="UnifrakturMaguntia, cursive";
+	seagull.style.fontSize="50px";
+	seagull.style.color="gray";
+	seagullImg.style.width="500px";
+	seagullImg.style.height="400px";
+	seagull.appendChild(seagullImg);
+	document.body.appendChild(seagull);
+});
+
+wisdom.addEventListener("click",function(e) {
+	var dolphin = document.createElement("center");
+	var dolphinImg = document.createElement("img");
+	dolphinImg.setAttribute(
+		"src", 
+		"https://78.media.tumblr.com/0c1af8649895dc6eea0233d79e3dea1c/tumblr_odyi4h3GH11vgea2uo1_640.jpg"
+	);	
+	dolphin.innerText="Your patronus is...a dolphin!";
+	dolphin.style.fontFamily="UnifrakturMaguntia, cursive";
+	dolphin.style.fontSize="50px";
+	dolphin.style.color="gray";
+	dolphinImg.style.width="500px";
+	dolphinImg.style.height="400px";
+	dolphin.appendChild(dolphinImg);
+	document.body.appendChild(dolphin);
+});
+
+bravery.addEventListener("click",function(e) {
+	var shark = document.createElement("center");
+	var sharkImg=document.createElement("img");
+	sharkImg.setAttribute(
+		"src",
+		"https://i.pinimg.com/564x/4b/0f/cd/4b0fcd357bde1f173ff5307caea3e90a.jpg"
+);
+	shark.innerText="Your patronus is...a shark!";
+	shark.style.fontFamily="UnifrakturMaguntia, cursive";
+	shark.style.fontSize="50px";
+	shark.style.color="gray";
+	sharkImg.style.width="500px";
+	sharkImg.style.height="400px";
+	shark.appendChild(sharkImg);
+	document.body.appendChild(shark);
+});
+
+});
+</script>
+</html>
